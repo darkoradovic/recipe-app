@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import './App.css';
 
-import Form from './components/Form.js';
-import Recipes from './components/Recipes.js';
+import Form from "./components/Form";
+import Recipes from "./components/Recipes";
 
 class App extends Component {
 
@@ -16,7 +15,7 @@ state = {
 getRecipe = async (e) => {
   const recipeName = e.target.elements.recipeName.value;
   e.preventDefault();
-  const api_call = await fetch(`https://cors-anywhere.herokuapp.com/https://www.food2fork.com/api/search?key=aefc1769e76c46041b599defa34f83c1&q=${recipeName}`)
+  const api_call = await fetch(`https://cors-anywhere.herokuapp.com/https://www.food2fork.com/api/search?key=b36411205969559c4eeeae7fb7457e99&q=${recipeName}`)
     //console.log(recipeName);
 
   const data = await api_call.json();

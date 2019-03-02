@@ -11,7 +11,7 @@ class Recipe extends Component {
 
   componentDidMount = async () => {
     const title = this.props.location.state.recipe;
-    const request = await fetch(`https://cors-anywhere.herokuapp.com/https://www.food2fork.com/api/search?key=aefc1769e76c46041b599defa34f83c1&q=${title}`)
+    const request = await fetch(`https://cors-anywhere.herokuapp.com/https://www.food2fork.com/api/search?key=b36411205969559c4eeeae7fb7457e99&q=${title}`)
       //console.log(recipeName);
 
     const resault = await request.json();
