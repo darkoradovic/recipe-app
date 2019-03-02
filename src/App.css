@@ -31,6 +31,7 @@ button:focus {
   padding: 30px;
   color: #ff5252;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .App-title {
@@ -81,6 +82,10 @@ button:focus {
   font-weight: 400;
   font-size: 0.8rem;
   letter-spacing: 1px;
+}
+
+.form {
+  text-align: center;
 }
 
 .form__input {
