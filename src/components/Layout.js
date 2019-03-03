@@ -22,7 +22,7 @@ class Layout extends Component {
         this.setState({ recipes: data.recipes })
     }
 
-    componentDidMount = () => {
+    /* componentDidMount = () => {
         const json = localStorage.getItem("recipes");
         const recipes = JSON.parse(json);
 
@@ -32,7 +32,7 @@ class Layout extends Component {
     componentDidUpdate = () => {
         const recipes = JSON.stringify(this.state.recipes);
         localStorage.setItem("recipes", recipes);
-    }
+    } */
 
     render() {
         return (
