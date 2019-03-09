@@ -7,7 +7,7 @@ import Recipes from "./Recipes";
 class Layout extends Component {
 
     state = {
-        recipes: []
+        recipes: [],
     }
 
     getRecipe = async (e) => {
@@ -20,6 +20,7 @@ class Layout extends Component {
         //console.log(data);
 
         this.setState({ recipes: data.recipes })
+
     }
 
     /* componentDidMount = () => {
